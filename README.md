@@ -9,7 +9,7 @@ trusted by Enterprise” and see the weekly downloads number.
 2. User is able to click on Company and then on “About Cypress”
 3. User is able to click on “Install” and then on “npm install cypress” and make sure
 the copied text is “npm install cypress --save-dev”
-4. User is able to click on “Product” and then “visual review”
+4. User is able to click on “Product” and then “Visual reviews”
 5. **Bonus**:
  User is able to click on “Product”, then “Smart Orchestration”, then scroll down to
 “Test Analytics” and see that the green circle is around “Test Analytics”
