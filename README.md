@@ -15,7 +15,7 @@ Bonus:
 “Test Analytics” and see that the green circle is around “Test Analytics”
 
 # Project structure:
-fixtures: can contain fixture files (e.g., JSON files) used for test data
-integration: place for test files, each test case has its own spec file for better organization
-plugins: cypress plugins directory, can be used to extend or modify Cypress behavior
-support: contains custom commands and additional configuration
+**fixtures**: can contain fixture files (e.g., JSON files) used for test data
+**integration**: place for test files, each test case has its own spec file for better organization
+**plugins**: cypress plugins directory, can be used to extend or modify Cypress behavior
+**support**: contains custom commands and additional configuration
