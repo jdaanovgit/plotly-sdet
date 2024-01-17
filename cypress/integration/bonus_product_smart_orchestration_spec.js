@@ -4,13 +4,14 @@ describe('Verify Green Circle around Test Analytics', () => {
     cy.visit('https://www.cypress.io/');
 
     // Click on the "Product" menu item
-    cy.contains('Product').click();
+    cy.get('[data-cy="dropdown-product"]').trigger('mouseover');
 
     // Click on the "Smart Orchestration" sub-menu item
-    cy.contains('Smart Orchestration').click();
+    cy.get('[data-cy="submenu"]').trigger('mouseover')
+    cy.get('a[href="/cloud#smart_orchestration"]').click({multiple:true});
 
     // Scroll down to the "Test Analytics" section
-    cy.contains('Test Analytics').scrollIntoView();
+    cy.contains(' Test Analytics ').scrollIntoView();
 
     // Verify that the green circle is around "Test Analytics" - selected item
     cy.get('#test_analytics')
