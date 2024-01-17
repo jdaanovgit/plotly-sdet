@@ -4,8 +4,8 @@ describe('Navigate to Visual Reviews', () => {
     cy.visit('https://www.cypress.io/');
 
     // Click on the "Product" menu item
-    cy.contains('Product').click();
-
+    cy.get('[data-cy="dropdown-product"]').trigger('mouseover');
+    
     // Click on the "Visual reviews" sub-menu item
     cy.contains('Visual reviews').click();
 
