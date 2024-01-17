@@ -30,3 +30,8 @@ cypress plugins directory, can be used to extend or modify Cypress behavior
 **support**:
 
 contains custom commands and additional configuration
+
+# Set up
+1. Install cypress - https://docs.cypress.io/guides/getting-started/installing-cypress
+2. Clone repo - https://github.com/jdaanovgit/plotly-sdet.git
+3. Run "integration" tests
