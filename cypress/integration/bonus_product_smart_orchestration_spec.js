@@ -14,7 +14,7 @@ describe('Verify Green Circle around Test Analytics', () => {
     // Scroll down to the "Test Analytics" section
     cy.contains('Gain actionable insights into your test suite').scrollIntoView();
 
-    // Verify that the green circle is around "Test Analytics" - selected item
+    // Verify that the green circle is around "Test Analytics" - selected item (border-jade-200)
     cy.get('#test_analytics')
       .contains('Test Analytics')
       .should('have.class', 'hover');
