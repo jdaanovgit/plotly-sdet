@@ -7,12 +7,13 @@ describe('Navigate to Visual Reviews', () => {
     cy.get('[data-cy="dropdown-product"]').trigger('mouseover');
     
     // Click on the "Visual reviews" sub-menu item
-    cy.contains('Visual reviews').click();
+    //according to spec: “visual review” - such section does not exist, updated according to the production state
+    cy.contains('Visual Reviews').click();
 
     // Verify that the page has navigated to the "Visual reviews" section
-    cy.url().should('include', '/cloud#visual_reviews');
+    cy.url().should('eq', 'https://www.cypress.io/cloud#visual_reviews');
 
     // Optionally, you can add more assertions to verify content on the "Visual reviews" page
-    cy.contains('Powerful Visual Testing').should('be.visible');
+    cy.contains('Review and debug failures visually').should('be.visible');
   });
 });
