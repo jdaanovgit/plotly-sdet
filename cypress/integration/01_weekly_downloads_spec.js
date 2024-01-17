@@ -4,7 +4,7 @@ describe('Cypress Website Test', () => {
     cy.visit('https://www.cypress.io/');
 
     // Scroll to the "Loved by OSS, trusted by Enterprise" section
-    cy.contains('Loved by').scrollIntoView();
+    cy.get('[uid="CoIp8"]').scrollIntoView();
 
     // Verify the weekly downloads number is visible
     cy.contains('Weekly downloads').should('be.visible');
