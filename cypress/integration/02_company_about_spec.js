@@ -4,7 +4,7 @@ describe('Navigate to About Cypress', () => {
     cy.visit('https://www.cypress.io/');
 
     // Click on the "Company" menu item
-    cy.get('#dropdownCompany').click();
+    cy.get('[data-cy="dropdown-company"]').trigger('mouseover');
 
     // Click on the "About Cypress" sub-menu item
     cy.contains('About Cypress').click();
