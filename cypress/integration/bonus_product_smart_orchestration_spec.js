@@ -12,7 +12,7 @@ describe('Verify Green Circle around Test Analytics', () => {
     cy.contains('Smart Orchestration').click;
     
     // Scroll down to the "Test Analytics" section
-    cy.contains(' Test Analytics ').scrollIntoView();
+    cy.contains('Gain actionable insights into your test suite').scrollIntoView();
 
     // Verify that the green circle is around "Test Analytics" - selected item
     cy.get('#test_analytics')
