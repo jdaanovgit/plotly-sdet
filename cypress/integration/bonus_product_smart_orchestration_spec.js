@@ -7,9 +7,10 @@ describe('Verify Green Circle around Test Analytics', () => {
     cy.get('[data-cy="dropdown-product"]').trigger('mouseover');
 
     // Click on the "Smart Orchestration" sub-menu item
-    cy.get('[data-cy="submenu"]').trigger('mouseover')
-    cy.get('a[href="/cloud#smart_orchestration"]').click({multiple:true});
-
+    //cy.get('[data-cy="submenu"]').trigger('mouseover')
+    //cy.get('a[href="/cloud#smart_orchestration"]').click({multiple:true});
+    cy.contains('Smart Orchestration').click;
+    
     // Scroll down to the "Test Analytics" section
     cy.contains(' Test Analytics ').scrollIntoView();
 
